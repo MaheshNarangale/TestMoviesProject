@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-08T16:44:29 IST" name="Suite1" finished-at="2022-12-08T16:45:12 IST" duration-ms="43134">
+    <groups>
+    </groups>
+    <test started-at="2022-12-08T16:44:29 IST" name="Test1" finished-at="2022-12-08T16:45:12 IST" duration-ms="43134">
+      <class name="com.Movies.TestClass.TC_SearchBoxImbd_001">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.Movies.TestClass.TC_SearchBoxImbd_001@409bf450]" started-at="2022-12-08T16:44:29 IST" name="setup" finished-at="2022-12-08T16:44:39 IST" duration-ms="9739" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="HomePageTitle()[pri:1, instance:com.Movies.TestClass.TC_SearchBoxImbd_001@409bf450]" started-at="2022-12-08T16:44:39 IST" name="HomePageTitle" finished-at="2022-12-08T16:44:56 IST" duration-ms="16973" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePageTitle -->
+        <test-method signature="validatedCountry()[pri:2, instance:com.Movies.TestClass.TC_SearchBoxImbd_001@409bf450]" started-at="2022-12-08T16:44:56 IST" name="validatedCountry" finished-at="2022-12-08T16:45:11 IST" depends-on-methods="com.Movies.TestClass.TC_SearchBoxImbd_001.HomePageTitle" duration-ms="15751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatedCountry -->
+        <test-method signature="Datevalidate()[pri:3, instance:com.Movies.TestClass.TC_SearchBoxImbd_001@409bf450]" started-at="2022-12-08T16:45:11 IST" name="Datevalidate" finished-at="2022-12-08T16:45:11 IST" depends-on-methods="com.Movies.TestClass.TC_SearchBoxImbd_001.validatedCountry" duration-ms="28" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [December 17, 2021] but found [December 17, 2021 (United States)]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [December 17, 2021] but found [December 17, 2021 (United States)]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at com.Movies.TestClass.TC_SearchBoxImbd_001.Datevalidate(TC_SearchBoxImbd_001.java:46)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Datevalidate -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Movies.TestClass.TC_SearchBoxImbd_001@409bf450]" started-at="2022-12-08T16:45:11 IST" name="tearDown" finished-at="2022-12-08T16:45:12 IST" duration-ms="538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Movies.TestClass.TC_SearchBoxImbd_001 -->
+      <class name="com.Movies.TestClass.TC_Wikipedia_002">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.Movies.TestClass.TC_Wikipedia_002@799f10e1]" started-at="2022-12-08T16:44:29 IST" name="setup" finished-at="2022-12-08T16:44:39 IST" duration-ms="9699" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="HomeTitle()[pri:1, instance:com.Movies.TestClass.TC_Wikipedia_002@799f10e1]" started-at="2022-12-08T16:44:39 IST" name="HomeTitle" finished-at="2022-12-08T16:45:00 IST" duration-ms="21595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomeTitle -->
+        <test-method signature="MoviesReleaseDateValidate()[pri:2, instance:com.Movies.TestClass.TC_Wikipedia_002@799f10e1]" started-at="2022-12-08T16:45:00 IST" name="MoviesReleaseDateValidate" finished-at="2022-12-08T16:45:00 IST" depends-on-methods="com.Movies.TestClass.TC_Wikipedia_002.HomeTitle" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MoviesReleaseDateValidate -->
+        <test-method signature="MoviesReleaseCountry()[pri:3, instance:com.Movies.TestClass.TC_Wikipedia_002@799f10e1]" started-at="2022-12-08T16:45:00 IST" name="MoviesReleaseCountry" finished-at="2022-12-08T16:45:00 IST" depends-on-methods="com.Movies.TestClass.TC_Wikipedia_002.MoviesReleaseDateValidate" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MoviesReleaseCountry -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Movies.TestClass.TC_Wikipedia_002@799f10e1]" started-at="2022-12-08T16:45:00 IST" name="tearDown" finished-at="2022-12-08T16:45:01 IST" duration-ms="672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Movies.TestClass.TC_Wikipedia_002 -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite1 -->
+</testng-results>
